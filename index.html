@@ -302,7 +302,7 @@ html.kynna .k-cur.k-rud{min-height:calc(100vh - 70px)}
 .pen-tools{display:flex;align-items:center;gap:6px;margin-left:auto}.pen-tools button{padding:4px 10px}.pen-tools button[aria-pressed=true]{background:#e06b36;color:#fff;border-color:#e06b36}
 .pen-c{width:24px;height:24px;border-radius:50%;padding:0!important;background:var(--pc)!important;border:2px solid #fff}.pen-c.sel{outline:3px solid #ffd54f;outline-offset:1px}
 html:not(.kynna) .pen-tools{display:none}
-#kNotes{display:none!important}html[data-theme=dark] .g6g{stroke:#263949}html[data-theme=dark] .g6a{stroke:#7d93a6}html[data-theme=dark] .g6bg{fill:#17232f}html.kynna .k-cur .tool-out{font-size:.8em;font-weight:650;color:#0c3a55;line-height:1.4}html[data-theme=dark].kynna .k-cur .tool-out{color:#e3f1fb}html.kynna .k-cur.panel:has(> .tool){display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);column-gap:32px;align-content:start}html.kynna .k-cur.panel:has(> .tool)>*{grid-column:1}html.kynna .k-cur.panel:has(> .tool)>.tool{grid-column:2;grid-row:1/span 30;align-self:start;margin-top:0}html.kynna .k-cur .tool .plot{max-height:calc(var(--kvh,600px) * .66)}html.kynna .k-cur .tool:has(.seg) .plot{max-height:calc(var(--kvh,600px) * .5)}html.kynna .k-cur .tool:has(.seg + .seg) .plot{max-height:calc(var(--kvh,600px) * .4)}html.kynna .k-cur .tool .seg{margin:4px 0}html.kynna .k-cur .tool .seg button{font-size:.62em;padding:6px 14px}html.kynna .k-cur .tool .tool-row{font-size:.8em}#kbar{flex-wrap:wrap;row-gap:4px}@media(max-width:1400px){html.kynna #kWhere{display:none}}@media(max-width:1200px){#kbar button{padding:3px 7px!important;font-size:.82rem}.pen-tools{gap:3px!important}}.sdt>.sdl{display:block}.sdt>.sdl+.sdl{margin-top:.45em}.sdt>.sdl:first-child+.sdl{margin-top:.7em}html.kynna .worked.k-cur{background-color:#fff;background-image:linear-gradient(#dbe5ee 1px,transparent 1px),linear-gradient(90deg,#dbe5ee 1px,transparent 1px);background-size:26px 26px}html[data-theme=dark].kynna .worked.k-cur{background-color:#0f1a24;background-image:linear-gradient(#22384a 1px,transparent 1px),linear-gradient(90deg,#22384a 1px,transparent 1px)}.k-printwrap{display:none}.k-ink{position:absolute;left:0;top:0;width:100%;height:100%;pointer-events:none;overflow:visible}@media print{html.k-printing body>*:not(main),html.k-printing main>*:not(.k-printwrap),html.k-printing #penCanvas,html.k-printing #kbar{display:none!important}html.k-printing .k-printwrap{display:block!important}html.k-printing .k-pslide .rud-space{min-height:0!important}html.k-printing .k-pslide .gcol,html.k-printing .k-pslide [data-ks=graf]{position:static!important}html.k-printing .k-pslide{overflow:hidden!important;position:relative;break-after:page;page-break-after:always;margin-top:var(--km,16px)!important}html.k-printing body,html.k-printing main{margin:0!important;padding:0!important;background:var(--k-bg,#f3f6fa)!important}html.k-printing *{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}}.worked>.sdhead{margin:calc(-1*var(--pp)) calc(-1*var(--pp)) 16px;padding:14px var(--pp);background:#e3eff8;border-bottom:1px solid #cfe0ec;display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 18px}.sdhead>.tag{color:#145b80;margin:0;white-space:nowrap;font-size:.8rem}.sdhead>.sdt{color:#0c3a55;font-weight:600;font-size:1.08rem;flex:1 1 320px;line-height:1.45}html[data-theme=dark] .worked>.sdhead{background:#1d3a52;border-bottom-color:#2e4457}html[data-theme=dark] .sdhead>.tag{color:#7cc2f0}html[data-theme=dark] .sdhead>.sdt{color:#e3f1fb}.sd-one{max-width:820px}html.kynna .k-cur .sd-one{max-width:none;column-count:2;column-gap:48px}html.kynna .k-cur .sd-one>.gstep{break-inside:avoid}html.kynna .k-cur .sd-one>.gstep:nth-child(3){break-before:column}.sd-one .answerbox{display:inline-block;min-width:260px}p.calc{margin:6px 0}p.calc math{font-size:1.3em}.pen-t,.pen-w{display:inline-flex;gap:2px}.pen-w button{padding:4px 7px;min-width:30px}.pen-w i{display:inline-block;width:var(--d);height:var(--d);border-radius:50%;background:currentColor;vertical-align:middle}.pen-w button[aria-pressed=true]{background:#e06b36;color:#fff;border-color:#e06b36}.pen-t button[aria-pressed=true]{background:#e06b36;color:#fff;border-color:#e06b36}svg.plot{border:0!important;border-radius:0;background:transparent!important}.g6bg{fill:#fff}html[data-theme=dark] .g6bg{fill:#0f1a24}.rud-g .plot{background:transparent!important}svg text.g6t{font-size:15px;font-weight:650;fill:#24394b}html[data-theme=dark] svg text.g6t{fill:#d6e3ee;stroke:#0f1a24}
+#kNotes{display:none!important}svg.plot{max-height:440px}.gcol svg.plot{max-height:480px}html.kynna .k-cur.worked:has(> .grid){display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.35fr);grid-template-rows:auto 1fr;column-gap:30px;align-items:start}html.kynna .k-cur.worked:has(> .grid)>.grid{display:contents}html.kynna .k-cur.worked:has(> .grid)>.sdhead{grid-column:1;grid-row:1;margin-right:0;border-radius:0 0 14px 0;border-right:1px solid #cfe0ec}html.kynna .k-cur.worked:has(> .grid)>.grid>div:first-child{grid-column:1;grid-row:2}html.kynna .k-cur.worked:has(> .grid)>.grid>.gcol{grid-column:2;grid-row:1/span 2;align-self:start}html.kynna .k-cur.worked .plot{max-height:calc(var(--kvh,600px) - 26px)}html[data-theme=dark] .g6g{stroke:#263949}html[data-theme=dark] .g6a{stroke:#7d93a6}html[data-theme=dark] .g6bg{fill:#17232f}html.kynna .k-cur .tool-out{font-size:.8em;font-weight:650;color:#0c3a55;line-height:1.4}html[data-theme=dark].kynna .k-cur .tool-out{color:#e3f1fb}html.kynna .k-cur.panel:has(> .tool){display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.3fr);column-gap:32px;align-content:start}html.kynna .k-cur.panel:has(> .tool)>*{grid-column:1}html.kynna .k-cur.panel:has(> .tool)>.tool{grid-column:2;grid-row:1/span 30;align-self:start;margin-top:0}html.kynna .k-cur .tool .plot{max-height:calc(var(--kvh,600px) * .82)}html.kynna .k-cur .tool:has(.seg) .plot{max-height:calc(var(--kvh,600px) * .68)}html.kynna .k-cur.panel:has(> .tool .seg + .seg){grid-template-columns:minmax(0,1.15fr) minmax(0,1fr)}html.kynna .k-cur .tool:has(.seg + .seg) .plot{max-height:calc(var(--kvh,600px) * .5)}html.kynna .k-cur .tool .seg{margin:4px 0}html.kynna .k-cur .tool .seg button{font-size:.62em;padding:6px 14px}html.kynna .k-cur .tool .tool-row{font-size:.8em}#kbar{flex-wrap:wrap;row-gap:4px}@media(max-width:1400px){html.kynna #kWhere{display:none}}@media(max-width:1200px){#kbar button{padding:3px 7px!important;font-size:.82rem}.pen-tools{gap:3px!important}}.sdt>.sdl{display:block}.sdt>.sdl+.sdl{margin-top:.45em}.sdt>.sdl:first-child+.sdl{margin-top:.7em}html.kynna .k-cur.k-grid{--gl:calc(.8px / var(--kz,1));background-color:#fff;background-image:linear-gradient(rgba(110,140,170,.13) var(--gl),transparent var(--gl)),linear-gradient(90deg,rgba(110,140,170,.13) var(--gl),transparent var(--gl));background-size:var(--gx,26px) var(--gy,26px);background-position:var(--gpx,0) var(--gpy,0)}html[data-theme=dark].kynna .k-cur.k-grid{background-color:#17232f;background-image:linear-gradient(rgba(160,190,215,.1) var(--gl),transparent var(--gl)),linear-gradient(90deg,rgba(160,190,215,.1) var(--gl),transparent var(--gl))}.k-grid .g6bg{fill:transparent!important}.k-grid .g6g{display:none}.k-grid svg.plot{background:transparent!important}.tool input[type=range]{-webkit-appearance:none;appearance:none;height:6px;border-radius:3px;background:#c8d6e3;outline:none;padding:0}.tool input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:20px;height:20px;border-radius:50%;background:#145b80;border:2px solid #fff;box-shadow:0 0 0 1px #145b80;cursor:pointer}.tool input[type=range]::-moz-range-thumb{width:18px;height:18px;border-radius:50%;background:#145b80;border:2px solid #fff}html.kynna .k-cur .tool input[type=range]{height:3px}html.kynna .k-cur .tool input[type=range]::-webkit-slider-thumb{width:11px;height:11px;border-width:1px}.pen-g{display:inline-flex;align-items:center;gap:2px;padding:0 6px;border-left:1px solid rgba(255,255,255,.22)}#kbar .pen-tools .pt,#kbar .pen-tools .pa,#kbar .pen-w button{background:transparent!important;border:1px solid transparent!important;color:#e8f1f8!important;padding:3px!important;width:34px;height:32px;border-radius:8px;display:inline-flex;align-items:center;justify-content:center;box-shadow:none}#kbar .pen-tools svg{width:21px;height:21px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}#kbar .pen-tools .pt:hover,#kbar .pen-tools .pa:hover,#kbar .pen-w button:hover{background:rgba(255,255,255,.14)!important}#kbar .pen-tools .pt[aria-pressed=true],#kbar .pen-w button[aria-pressed=true]{background:rgba(255,255,255,.2)!important;color:#ffe08a!important;box-shadow:inset 0 -2px 0 #ffd54f}#kbar .pen-tools #kGrid[aria-pressed=true]{background:rgba(255,255,255,.2)!important;color:#a8e6c4!important;box-shadow:inset 0 -2px 0 #7fd3a8}#kbar .pen-tools #kGrid:disabled{opacity:.35}#kbar .pen-c{width:22px;height:22px;margin:0 3px}#kbar .pen-c[aria-pressed=true]{outline:2px solid #fff;outline-offset:2px}.k-printwrap{display:none}.k-ink{position:absolute;left:0;top:0;width:100%;height:100%;pointer-events:none;overflow:visible}@media print{html.k-printing body>*:not(main),html.k-printing main>*:not(.k-printwrap),html.k-printing #penCanvas,html.k-printing #kbar{display:none!important}html.k-printing .k-printwrap{display:block!important}html.k-printing .k-pslide .rud-space{min-height:0!important}html.k-printing .k-pslide .gcol,html.k-printing .k-pslide [data-ks=graf]{position:static!important}html.k-printing .k-pslide{overflow:hidden!important;position:relative;break-after:page;page-break-after:always;margin-top:var(--km,16px)!important}html.k-printing body,html.k-printing main{margin:0!important;padding:0!important;background:var(--k-bg,#f3f6fa)!important}html.k-printing *{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}}.worked>.sdhead{margin:calc(-1*var(--pp)) calc(-1*var(--pp)) 16px;padding:14px var(--pp);background:#e3eff8;border-bottom:1px solid #cfe0ec;display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 18px}.sdhead>.tag{color:#145b80;margin:0;white-space:nowrap;font-size:.8rem}.sdhead>.sdt{color:#0c3a55;font-weight:600;font-size:1.08rem;flex:1 1 320px;line-height:1.45}html[data-theme=dark] .worked>.sdhead{background:#1d3a52;border-bottom-color:#2e4457}html[data-theme=dark] .sdhead>.tag{color:#7cc2f0}html[data-theme=dark] .sdhead>.sdt{color:#e3f1fb}.sd-one{max-width:820px}html.kynna .k-cur .sd-one{max-width:none;column-count:2;column-gap:48px}html.kynna .k-cur .sd-one>.gstep{break-inside:avoid}html.kynna .k-cur .sd-one>.gstep:nth-child(3){break-before:column}.sd-one .answerbox{display:inline-block;min-width:260px}p.calc{margin:6px 0}p.calc math{font-size:1.3em}.pen-t,.pen-w{display:inline-flex;gap:2px}.pen-w button{padding:4px 7px;min-width:30px}.pen-w i{display:inline-block;width:var(--d);height:var(--d);border-radius:50%;background:currentColor;vertical-align:middle}.pen-w button[aria-pressed=true]{background:#e06b36;color:#fff;border-color:#e06b36}.pen-t button[aria-pressed=true]{background:#e06b36;color:#fff;border-color:#e06b36}svg.plot{border:0!important;border-radius:0;background:transparent!important}.g6bg{fill:#fff}html[data-theme=dark] .g6bg{fill:#0f1a24}.rud-g .plot{background:transparent!important}svg text.g6t{font-size:15px;font-weight:650;fill:#24394b}html[data-theme=dark] svg text.g6t{fill:#d6e3ee;stroke:#0f1a24}
 .nw{white-space:nowrap}html.kynna #w-bil td,html.kynna #w-bil th{padding-top:2px;padding-bottom:2px}html.kynna #w-bil .nl svg,html.kynna #w-bil svg{max-height:calc(var(--kvh,600px)*.085);width:auto}html.kynna #w-bil > p{margin:4px 0}
 html.kynna .k-cur .tool .plot{max-height:calc(var(--kvh,600px) * .40);width:auto;margin:0 auto}html.kynna .k-cur .tool{margin-top:4px}html.kynna .k-cur .tool-row{margin:2px 0}html.kynna .k-cur .tool-out{margin:2px 0}
 </style>
@@ -330,9 +330,9 @@ html.kynna .k-cur .tool .plot{max-height:calc(var(--kvh,600px) * .40);width:auto
 <p class="tool-out" id="tPtOut" role="status" aria-live="polite"></p>
 </div>
 </div>
-<div class="panel worked" id="t-s1" data-kynna data-kr="3" data-knote="Fyrst x á x-ásnum, svo lóðrétt að grafinu, svo lárétt að y-ásnum.">
+<div class="panel worked" id="t-s1" data-rud data-kynna data-kr="3" data-knote="Fyrst x á x-ásnum, svo lóðrétt að grafinu, svo lárétt að y-ásnum.">
 <div class="sdhead"><span class="tag">Sýnidæmi 1</span><span class="sdt"><span class="sdl">Fallið er <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>f</mi><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>=</mo><msup><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>−</mo><mn>3</mn></math>.</span><span class="sdl">a) Lestu <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>f</mi><mrow><mo stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo></mrow></math> og <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>f</mi><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></math> af grafinu.</span><span class="sdl">b) Reiknaðu <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>f</mi><mrow><mo stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo></mrow></math> og <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>f</mi><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></math> með innsetningu.</span></span></div>
-<div class="grid"><div><div class="gstep" data-ks data-ko="1"><p><strong>a) Lesið af grafi.</strong> Finnum <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>=</mo><mn>3</mn></math> á x-ásnum og förum lóðrétt að grafinu.</p></div><div class="gstep" data-ks data-ko="3"><p>Þaðan lárétt að y-ásnum: <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>f</mi><mrow><mo stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo></mrow><mo>=</mo><mn>1</mn></math>.</p></div><div class="gstep" data-ks data-ko="5"><p>Grafið sker y-ásinn í <math xmlns="http://www.w3.org/1998/Math/MathML"><mo form="prefix" lspace="0" rspace="0">−</mo><mn>2</mn></math>: <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>f</mi><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow><mo>=</mo><mo form="prefix" lspace="0" rspace="0">−</mo><mn>2</mn></math>.</p></div><div class="gstep" data-ks data-ko="6"><p><strong>b) Reiknað.</strong> Setjum töluna inn fyrir x í formúlunni.</p><p class="calc"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>f</mi><mrow><mo stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo></mrow><mo>=</mo><msup><mrow><mo stretchy="false">(</mo><mn>3</mn><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>−</mo><mn>3</mn><mo>=</mo><mn>4</mn><mo>−</mo><mn>3</mn><mo>=</mo><mn>1</mn></math></p></div><div class="gstep" data-ks data-ko="7"><p class="calc"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>f</mi><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow><mo>=</mo><msup><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>−</mo><mn>3</mn><mo>=</mo><mn>1</mn><mo>−</mo><mn>3</mn><mo>=</mo><mo form="prefix" lspace="0" rspace="0">−</mo><mn>2</mn></math></p></div><div class="gstep" data-ks data-ko="8"><p class="answerbox"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>f</mi><mrow><mo stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo></mrow><mo>=</mo><mn>1</mn></math> og <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>f</mi><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow><mo>=</mo><mo form="prefix" lspace="0" rspace="0">−</mo><mn>2</mn></math>: sama svar á báða vegu.</p></div></div><div class="gcol"><svg id="tS1G" class="plot" viewBox="0 0 460 360" role="img" aria-label="Graf fallsins f. Merkt er hvernig f(3) = 1 og f(0) = −2 eru lesin."></svg></div></div>
+<div class="grid"><div><div class="gstep" data-ks data-ko="1"><p><strong>a) Lesið af grafi.</strong> Finnum <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>=</mo><mn>3</mn></math> á x-ásnum og förum lóðrétt að grafinu.</p></div><div class="gstep" data-ks data-ko="3"><p>Þaðan lárétt að y-ásnum: <span class="nw"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>f</mi><mrow><mo stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo></mrow><mo>=</mo><mn>1</mn></math>.</span></p></div><div class="gstep" data-ks data-ko="5"><p>Grafið sker y-ásinn í <math xmlns="http://www.w3.org/1998/Math/MathML"><mo form="prefix" lspace="0" rspace="0">−</mo><mn>2</mn></math>: <span class="nw"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>f</mi><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow><mo>=</mo><mo form="prefix" lspace="0" rspace="0">−</mo><mn>2</mn></math>.</span></p></div><div class="gstep b-only" data-ks data-ko="6"><p><strong>b) Reiknað.</strong> Setjum töluna inn fyrir x í formúlunni.</p><p class="calc"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>f</mi><mrow><mo stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo></mrow><mo>=</mo><msup><mrow><mo stretchy="false">(</mo><mn>3</mn><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>−</mo><mn>3</mn><mo>=</mo><mn>4</mn><mo>−</mo><mn>3</mn><mo>=</mo><mn>1</mn></math></p></div><div class="gstep b-only" data-ks data-ko="7"><p class="calc"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>f</mi><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow><mo>=</mo><msup><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>−</mo><mn>3</mn><mo>=</mo><mn>1</mn><mo>−</mo><mn>3</mn><mo>=</mo><mo form="prefix" lspace="0" rspace="0">−</mo><mn>2</mn></math></p></div><div class="gstep b-only" data-ks data-ko="8"><p class="answerbox"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>f</mi><mrow><mo stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo></mrow><mo>=</mo><mn>1</mn></math> og <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>f</mi><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow><mo>=</mo><mo form="prefix" lspace="0" rspace="0">−</mo><mn>2</mn></math>: sama svar á báða vegu.</p></div></div><div class="gcol"><svg id="tS1G" class="plot" viewBox="0 0 460 360" role="img" aria-label="Graf fallsins f. Merkt er hvernig f(3) = 1 og f(0) = −2 eru lesin."></svg></div></div>
 </div>
 <div class="panel worked" id="t-s2" data-kynna data-kr="5" data-knote="Nú er y gefið og við leitum að x. Dregin er lárétt lína y = 1.">
 <div class="sdhead"><span class="tag">Sýnidæmi 2</span><span class="sdt">Fyrir hvaða x er <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>f</mi><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>=</mo><mn>1</mn></math>?</span></div>
@@ -341,7 +341,7 @@ html.kynna .k-cur .tool .plot{max-height:calc(var(--kvh,600px) * .40);width:auto
 <div class="panel" id="t-fall" data-kynna data-kr="6" data-knote="Dragðu línuna yfir hringinn og liggjandi fleygbogann. Spurðu: hvaða x hefur tvö y?">
 <div class="tag">Er grafið fall?</div>
 <h2>Lóðrétta línan</h2>
-<p>Í falli hefur hvert x aðeins eitt y. Dragðu lóðréttu línuna yfir grafið. Ef hún sker grafið einhvers staðar í <strong>tveimur punktum</strong> er grafið <strong>ekki fall</strong>.</p>
+<p>Í falli hefur hvert x aðeins eitt y. <span class="b-only">Dragðu lóðréttu línuna yfir grafið. </span>Ef lóðrétt lína sker grafið einhvers staðar í <strong>tveimur punktum</strong> er grafið <strong>ekki fall</strong>.</p>
 <div class="tool">
 <div class="seg" role="group" aria-label="Veldu graf"><button type="button" data-g="p" aria-pressed="true">Fleygbogi</button><button type="button" data-g="c" aria-pressed="false">Hringur</button><button type="button" data-g="s" aria-pressed="false">Liggjandi fleygbogi</button></div>
 <svg id="tVl" class="plot" viewBox="0 0 460 360" role="img" aria-label="Graf og lóðrétt lína sem hægt er að færa"></svg>
@@ -488,9 +488,9 @@ html.kynna .k-cur .tool .plot{max-height:calc(var(--kvh,600px) * .40);width:auto
 <div class="sdhead"><span class="tag">Sýnidæmi 2</span><span class="sdt">Grafið sýnir fallið <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>f</mi><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>2</mn><mi>x</mi></math>. Finndu <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>D</mi><mi>f</mi></msub></math> og <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>V</mi><mi>f</mi></msub></math>.</span></div>
 <div class="grid"><div><div class="gstep" data-ks data-ko="1"><p>Grafið heldur endalaust áfram til vinstri og hægri. Öll x-gildi eru með.</p></div><div class="gstep" data-ks data-ko="3"><p class="answerbox"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>D</mi><mi>f</mi></msub><mo>=</mo><mi mathvariant="normal">ℝ</mi></math></p></div><div class="gstep" data-ks data-ko="4"><p>Lægsta gildið er í botnpunktinum <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo stretchy="false">(</mo><mn>1</mn><mo separator="true" lspace="0" rspace="0.3em">,</mo><mo form="prefix" lspace="0" rspace="0">−</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></math>. Þaðan heldur grafið endalaust upp.</p></div><div class="gstep" data-ks data-ko="6"><p class="answerbox"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>V</mi><mi>f</mi></msub><mo>=</mo><mrow><mo stretchy="false">[</mo><mo form="prefix" lspace="0" rspace="0">−</mo><mn>1</mn><mo separator="true" lspace="0" rspace="0.3em">,</mo><mi>∞</mi><mo stretchy="false">)</mo></mrow></math></p></div></div><div class="gcol"><svg id="wS2G" class="plot" viewBox="0 0 460 360" role="img" aria-label="Fleygbogi með botnpunkt (1, −1). Skuggi á x-ás nær yfir allan ásinn, skuggi á y-ás frá −1 og upp."></svg></div></div>
 </div>
-<div class="panel worked" id="w-s3" data-kynna data-kr="8" data-knote="Engin mynd: skilgreiningarmengið er fundið út frá formúlunni. Spurðu: hvaða x má ekki setja inn?">
+<div class="panel worked" id="w-s3" data-rud data-kynna data-kr="8" data-knote="Engin mynd: skilgreiningarmengið er fundið út frá formúlunni. Spurðu: hvaða x má ekki setja inn?">
 <div class="sdhead"><span class="tag">Sýnidæmi 3</span><span class="sdt"><span class="sdl">Finndu skilgreiningarmengið út frá formúlunni.</span><span class="sdl">a) <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>f</mi><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>4</mn><mi>x</mi></math></span><span class="sdl">b) <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>g</mi><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>=</mo><mstyle displaystyle="true"><mfrac><mn>5</mn><mrow><mi>x</mi><mo>−</mo><mn>3</mn></mrow></mfrac></mstyle></math></span><span class="sdl">c) <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>h</mi><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>=</mo><msqrt><mi>x</mi><mo>−</mo><mn>2</mn></msqrt></math></span></span></div>
-<div class="sd-one"><div class="gstep" data-ks data-ko="1"><div class="defbox"><p><strong>Spurðu: hvaða x má ekki setja inn í formúluna?</strong></p><ul><li>Ekki má deila með 0. Í broti má nefnarinn því ekki vera 0.</li><li>Ekki er hægt að taka ferningsrót af neikvæðri tölu. Það sem er undir rótinni verður að vera 0 eða stærra.</li><li>Ef formúlan hefur hvorki brot né rót má setja hvaða tölu sem er inn fyrir x.</li></ul></div></div><div class="gstep" data-ks data-ko="2"><p><strong>a)</strong> Hvorki brot né rót: hvaða tölu sem er má setja inn fyrir x.</p><p class="answerbox"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>D</mi><mi>f</mi></msub><mo>=</mo><mi mathvariant="normal">ℝ</mi></math></p></div><div class="gstep" data-ks data-ko="3"><p><strong>b)</strong> Nefnarinn er <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>−</mo><mn>3</mn></math>. Hann verður 0 þegar <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>=</mo><mn>3</mn></math>, því <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>3</mn><mo>−</mo><mn>3</mn><mo>=</mo><mn>0</mn></math>. Þá væri deilt með 0, svo 3 má ekki setja inn. Allar aðrar tölur má setja inn.</p></div><div class="gstep" data-ks data-ko="4"><p class="answerbox"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>D</mi><mi>g</mi></msub><mo>=</mo><mi mathvariant="normal">ℝ</mi><mo>∖</mo><mo stretchy="false">{</mo><mn>3</mn><mo stretchy="false">}</mo></math> (allar rauntölur nema 3)</p></div><div class="gstep" data-ks data-ko="5"><p><strong>c)</strong> Undir rótinni er <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>−</mo><mn>2</mn></math>. Það má ekki vera neikvætt: <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>−</mo><mn>2</mn><mo>≥</mo><mn>0</mn></math>, svo <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>≥</mo><mn>2</mn></math>.</p><p>Til dæmis gengur <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>=</mo><mn>6</mn></math>: <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>h</mi><mrow><mo stretchy="false">(</mo><mn>6</mn><mo stretchy="false">)</mo></mrow></math> = <math xmlns="http://www.w3.org/1998/Math/MathML"><msqrt><mn>6</mn><mo>−</mo><mn>2</mn></msqrt></math> <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>=</mo><mn>2</mn></math>. En <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>=</mo><mn>1</mn></math> gengur ekki, því <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>−</mo><mn>2</mn><mo>=</mo><mo form="prefix" lspace="0" rspace="0">−</mo><mn>1</mn></math> er neikvætt.</p></div><div class="gstep" data-ks data-ko="6"><p class="answerbox"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>D</mi><mi>h</mi></msub><mo>=</mo><mrow><mo stretchy="false">[</mo><mn>2</mn><mo separator="true" lspace="0" rspace="0.3em">,</mo><mi>∞</mi><mo stretchy="false">)</mo></mrow></math></p></div></div>
+<div class="sd-one"><div class="gstep" data-ks data-ko="1"><div class="defbox"><p><strong>Spurðu: hvaða x má ekki setja inn í formúluna?</strong></p><ul><li>Ekki má deila með 0. Í broti má nefnarinn því ekki vera 0.</li><li>Ekki er hægt að taka ferningsrót af neikvæðri tölu. Það sem er undir rótinni verður að vera 0 eða stærra.</li><li>Ef formúlan hefur hvorki brot né rót má setja hvaða tölu sem er inn fyrir x.</li></ul></div></div><div class="gstep b-only" data-ks data-ko="2"><p><strong>a)</strong> Hvorki brot né rót: hvaða tölu sem er má setja inn fyrir x.</p><p class="answerbox"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>D</mi><mi>f</mi></msub><mo>=</mo><mi mathvariant="normal">ℝ</mi></math></p></div><div class="gstep b-only" data-ks data-ko="3"><p><strong>b)</strong> Nefnarinn er <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>−</mo><mn>3</mn></math>. Hann verður 0 þegar <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>=</mo><mn>3</mn></math>, því <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>3</mn><mo>−</mo><mn>3</mn><mo>=</mo><mn>0</mn></math>. Þá væri deilt með 0, svo 3 má ekki setja inn. Allar aðrar tölur má setja inn.</p></div><div class="gstep b-only" data-ks data-ko="4"><p class="answerbox"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>D</mi><mi>g</mi></msub><mo>=</mo><mi mathvariant="normal">ℝ</mi><mo>∖</mo><mo stretchy="false">{</mo><mn>3</mn><mo stretchy="false">}</mo></math> (allar rauntölur nema 3)</p></div><div class="gstep b-only" data-ks data-ko="5"><p><strong>c)</strong> Undir rótinni er <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>−</mo><mn>2</mn></math>. Það má ekki vera neikvætt: <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>−</mo><mn>2</mn><mo>≥</mo><mn>0</mn></math>, svo <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>≥</mo><mn>2</mn></math>.</p><p>Til dæmis gengur <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>=</mo><mn>6</mn></math>: <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>h</mi><mrow><mo stretchy="false">(</mo><mn>6</mn><mo stretchy="false">)</mo></mrow></math> = <math xmlns="http://www.w3.org/1998/Math/MathML"><msqrt><mn>6</mn><mo>−</mo><mn>2</mn></msqrt></math> <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>=</mo><mn>2</mn></math>. En <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>=</mo><mn>1</mn></math> gengur ekki, því <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>−</mo><mn>2</mn><mo>=</mo><mo form="prefix" lspace="0" rspace="0">−</mo><mn>1</mn></math> er neikvætt.</p></div><div class="gstep b-only" data-ks data-ko="6"><p class="answerbox"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>D</mi><mi>h</mi></msub><mo>=</mo><mrow><mo stretchy="false">[</mo><mn>2</mn><mo separator="true" lspace="0" rspace="0.3em">,</mo><mi>∞</mi><mo stretchy="false">)</mo></mrow></math></p></div></div>
 </div>
 <div class="panel">
 <div class="tag">Í stuttu máli</div>
@@ -627,9 +627,9 @@ html.kynna .k-cur .tool .plot{max-height:calc(var(--kvh,600px) * .40);width:auto
 <div class="sdhead"><span class="tag">Sýnidæmi 2</span><span class="sdt">Grafið sýnir sama fall f. Leystu <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>f</mi><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>=</mo><mo form="prefix" lspace="0" rspace="0">−</mo><mn>3</mn></math> og <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>f</mi><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>=</mo><mo form="prefix" lspace="0" rspace="0">−</mo><mn>4</mn></math> með grafinu.</span></div>
 <div class="grid"><div><div class="gstep" data-ks data-ko="1"><p>Drögum láréttu línuna <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi><mo>=</mo><mo form="prefix" lspace="0" rspace="0">−</mo><mn>3</mn></math>. Hún sker grafið í <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>=</mo><mn>0</mn></math> og <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>=</mo><mn>2</mn></math>.</p></div><div class="gstep" data-ks data-ko="2"><p class="answerbox"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>f</mi><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>=</mo><mo form="prefix" lspace="0" rspace="0">−</mo><mn>3</mn></math>: <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>=</mo><mn>0</mn></math> eða <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>=</mo><mn>2</mn></math></p></div><div class="gstep" data-ks data-ko="3"><p>Línan <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi><mo>=</mo><mo form="prefix" lspace="0" rspace="0">−</mo><mn>4</mn></math> snertir grafið aðeins í botnpunktinum <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo stretchy="false">(</mo><mn>1</mn><mo separator="true" lspace="0" rspace="0.3em">,</mo><mo form="prefix" lspace="0" rspace="0">−</mo><mn>4</mn><mo stretchy="false">)</mo></mrow></math>.</p></div><div class="gstep" data-ks data-ko="4"><p class="answerbox"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>f</mi><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>=</mo><mo form="prefix" lspace="0" rspace="0">−</mo><mn>4</mn></math>: <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>=</mo><mn>1</mn></math></p></div></div><div class="gcol"><svg id="hS2G" class="plot" viewBox="0 0 460 360" role="img" aria-label="Fleygbogi með láréttu línunum y = −3, sem sker hann í x = 0 og x = 2, og y = −4, sem snertir hann í botnpunktinum."></svg></div></div>
 </div>
-<div class="panel worked" id="h-s3" data-kynna data-kr="7" data-knote="Nú er reiknað, ekki lesið. Grafið er notað til að athuga svarið.">
+<div class="panel worked" id="h-s3" data-rud data-kynna data-kr="7" data-knote="Nú er reiknað, ekki lesið. Grafið er notað til að athuga svarið.">
 <div class="sdhead"><span class="tag">Sýnidæmi 3</span><span class="sdt">Fallið er <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>f</mi><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>2</mn><mi>x</mi><mo>−</mo><mn>3</mn></math>. Leystu <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>f</mi><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>=</mo><mn>5</mn></math> með útreikningi.</span></div>
-<div class="grid"><div><div class="gstep" data-ks data-ko="1"><div class="defbox"><p><strong>Aðferð:</strong> settu formúluna jafna 5, færðu allt í aðra hliðina og leystu jöfnuna.</p></div></div><div class="gstep" data-ks data-ko="2"><p class="calc"><math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>2</mn><mi>x</mi><mo>−</mo><mn>3</mn><mo>=</mo><mn>5</mn></math></p></div><div class="gstep" data-ks data-ko="3"><p class="calc"><math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>2</mn><mi>x</mi><mo>−</mo><mn>8</mn><mo>=</mo><mn>0</mn></math></p></div><div class="gstep" data-ks data-ko="4"><p class="calc"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>+</mo><mn>2</mn><mo stretchy="false">)</mo></mrow><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mn>4</mn><mo stretchy="false">)</mo></mrow><mo>=</mo><mn>0</mn></math></p></div><div class="gstep" data-ks data-ko="5"><p class="answerbox"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>=</mo><mo form="prefix" lspace="0" rspace="0">−</mo><mn>2</mn></math> eða <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>=</mo><mn>4</mn></math></p></div><div class="gstep" data-ks data-ko="6"><p><strong>Athugun:</strong> línan <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi><mo>=</mo><mn>5</mn></math> sker grafið í <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>=</mo><mo form="prefix" lspace="0" rspace="0">−</mo><mn>2</mn></math> og <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>=</mo><mn>4</mn></math>.</p></div></div><div class="gcol"><svg id="hS3G" class="plot" viewBox="0 0 460 360" role="img" aria-label="Fleygbogi og lárétta línan y = 5 sem sker hann í x = −2 og x = 4."></svg></div></div>
+<div class="grid"><div><div class="gstep" data-ks data-ko="1"><div class="defbox"><p><strong>Aðferð:</strong> settu formúluna jafna 5, færðu allt í aðra hliðina og leystu jöfnuna.</p></div></div><div class="gstep b-only" data-ks data-ko="2"><p class="calc"><math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>2</mn><mi>x</mi><mo>−</mo><mn>3</mn><mo>=</mo><mn>5</mn></math></p></div><div class="gstep b-only" data-ks data-ko="3"><p class="calc"><math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>2</mn><mi>x</mi><mo>−</mo><mn>8</mn><mo>=</mo><mn>0</mn></math></p></div><div class="gstep b-only" data-ks data-ko="4"><p class="calc"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>+</mo><mn>2</mn><mo stretchy="false">)</mo></mrow><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mn>4</mn><mo stretchy="false">)</mo></mrow><mo>=</mo><mn>0</mn></math></p></div><div class="gstep b-only" data-ks data-ko="5"><p class="answerbox"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>=</mo><mo form="prefix" lspace="0" rspace="0">−</mo><mn>2</mn></math> eða <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>=</mo><mn>4</mn></math></p></div><div class="gstep b-only" data-ks data-ko="6"><p><strong>Athugun:</strong> línan <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi><mo>=</mo><mn>5</mn></math> sker grafið í <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>=</mo><mo form="prefix" lspace="0" rspace="0">−</mo><mn>2</mn></math> og <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>=</mo><mn>4</mn></math>.</p></div></div><div class="gcol"><svg id="hS3G" class="plot" viewBox="0 0 460 360" role="img" aria-label="Fleygbogi og lárétta línan y = 5 sem sker hann í x = −2 og x = 4."></svg></div></div>
 </div>
 <div class="panel">
 <div class="tag">Í stuttu máli</div>
@@ -756,9 +756,9 @@ html.kynna .k-cur .tool .plot{max-height:calc(var(--kvh,600px) * .40);width:auto
 <p class="tool-out" id="fAbsOut" role="status" aria-live="polite"></p>
 </div>
 </div>
-<div class="panel worked" id="f-s1" data-kynna data-kr="3" data-knote="Gildataflan fyrst, svo punktarnir, svo V-ið. Spurðu um D_f og V_f.">
+<div class="panel worked" id="f-s1" data-rud data-kynna data-kr="3" data-knote="Gildataflan fyrst, svo punktarnir, svo V-ið. Spurðu um D_f og V_f.">
 <div class="sdhead"><span class="tag">Sýnidæmi 1</span><span class="sdt">Gerðu gildatöflu fyrir <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>f</mi><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>=</mo><mo stretchy="false" lspace="0" rspace="0">|</mo><mi>x</mi><mo stretchy="false" lspace="0" rspace="0">|</mo></math> og teiknaðu grafið.</span></div>
-<div class="grid"><div><div class="gstep" data-ks data-ko="1"><h3>Gildatafla</h3><div class="table-wrap"><table class="vtafla"><thead><tr><th scope="col"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi></math></th><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mo form="prefix" lspace="0" rspace="0">−</mo><mn>3</mn></math></td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mo form="prefix" lspace="0" rspace="0">−</mo><mn>2</mn></math></td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mo form="prefix" lspace="0" rspace="0">−</mo><mn>1</mn></math></td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>0</mn></math></td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn></math></td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn></math></td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>3</mn></math></td></tr></thead><tbody><tr><th scope="row"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo stretchy="false" lspace="0" rspace="0">|</mo><mi>x</mi><mo stretchy="false" lspace="0" rspace="0">|</mo></math></th><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>3</mn></math></td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn></math></td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn></math></td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>0</mn></math></td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn></math></td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn></math></td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>3</mn></math></td></tr></tbody></table></div></div><div class="gstep" data-ks data-ko="3"><p>Punktarnir mynda <strong>V</strong> með botnpunktinn <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo stretchy="false">(</mo><mn>0</mn><mo separator="true" lspace="0" rspace="0.3em">,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></math>. Grafið er samhverft um y-ásinn.</p></div><div class="gstep" data-ks data-ko="4"><p class="answerbox"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>D</mi><mi>f</mi></msub><mo>=</mo><mi mathvariant="normal">ℝ</mi></math> og <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>V</mi><mi>f</mi></msub><mo>=</mo><mrow><mo stretchy="false">[</mo><mn>0</mn><mo separator="true" lspace="0" rspace="0.3em">,</mo><mi>∞</mi><mo stretchy="false">)</mo></mrow></math></p></div></div><div class="gcol"><svg id="fS1G" class="plot" viewBox="0 0 460 360" role="img" aria-label="V-laga graf f(x) = |x| með punktunum úr gildatöflunni."></svg></div></div>
+<div class="grid"><div><div class="gstep b-only" data-ks data-ko="1"><h3>Gildatafla</h3><div class="table-wrap"><table class="vtafla"><thead><tr><th scope="col"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi></math></th><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mo form="prefix" lspace="0" rspace="0">−</mo><mn>3</mn></math></td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mo form="prefix" lspace="0" rspace="0">−</mo><mn>2</mn></math></td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mo form="prefix" lspace="0" rspace="0">−</mo><mn>1</mn></math></td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>0</mn></math></td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn></math></td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn></math></td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>3</mn></math></td></tr></thead><tbody><tr><th scope="row"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo stretchy="false" lspace="0" rspace="0">|</mo><mi>x</mi><mo stretchy="false" lspace="0" rspace="0">|</mo></math></th><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>3</mn></math></td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn></math></td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn></math></td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>0</mn></math></td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn></math></td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn></math></td><td><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>3</mn></math></td></tr></tbody></table></div></div><div class="gstep b-only" data-ks data-ko="3"><p>Punktarnir mynda <strong>V</strong> með botnpunktinn <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo stretchy="false">(</mo><mn>0</mn><mo separator="true" lspace="0" rspace="0.3em">,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></math>. Grafið er samhverft um y-ásinn.</p></div><div class="gstep b-only" data-ks data-ko="4"><p class="answerbox"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>D</mi><mi>f</mi></msub><mo>=</mo><mi mathvariant="normal">ℝ</mi></math> og <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>V</mi><mi>f</mi></msub><mo>=</mo><mrow><mo stretchy="false">[</mo><mn>0</mn><mo separator="true" lspace="0" rspace="0.3em">,</mo><mi>∞</mi><mo stretchy="false">)</mo></mrow></math></p></div></div><div class="gcol"><svg id="fS1G" class="plot" viewBox="0 0 460 360" role="img" aria-label="V-laga graf f(x) = |x| með punktunum úr gildatöflunni."></svg></div></div>
 </div>
 <div class="panel worked" id="f-s2" data-kynna data-kr="5" data-knote="Tvær, ein eða engin lausn eftir því hvar lárétta línan liggur.">
 <div class="sdhead"><span class="tag">Sýnidæmi 2</span><span class="sdt">Leystu <math xmlns="http://www.w3.org/1998/Math/MathML"><mo stretchy="false" lspace="0" rspace="0">|</mo><mi>x</mi><mo stretchy="false" lspace="0" rspace="0">|</mo><mo>=</mo><mn>3</mn></math>, <math xmlns="http://www.w3.org/1998/Math/MathML"><mo stretchy="false" lspace="0" rspace="0">|</mo><mi>x</mi><mo stretchy="false" lspace="0" rspace="0">|</mo><mo>=</mo><mn>0</mn></math> og <math xmlns="http://www.w3.org/1998/Math/MathML"><mo stretchy="false" lspace="0" rspace="0">|</mo><mi>x</mi><mo stretchy="false" lspace="0" rspace="0">|</mo><mo>=</mo><mo form="prefix" lspace="0" rspace="0">−</mo><mn>1</mn></math> með grafi <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>f</mi><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>=</mo><mo stretchy="false" lspace="0" rspace="0">|</mo><mi>x</mi><mo stretchy="false" lspace="0" rspace="0">|</mo></math>.</span></div>
@@ -914,7 +914,7 @@ html.kynna .k-cur .tool .plot{max-height:calc(var(--kvh,600px) * .40);width:auto
 'use strict';
 // Vistunarlykill viku 5. Má ekki breyta eftir birtingu; annars glatast vistuð hök nemenda.
 const KEY = 'staer2af05-v6-vefbok-v1';
-const REV = 'STAER2AF05-V06-VB-v0.8-20261120';
+const REV = 'STAER2AF05-V06-VB-v0.12-20261120';
 const $ = id => document.getElementById(id);
 // Svið úr v0.3 (done, quiz, poe, k) eru óbreytt. v0.4 bætir við tpoe, fpoe og tasks.
 let state = { done: {}, quiz: {}, poe: {}, k: 2, tpoe: {}, fpoe: null, tasks: {} };
@@ -1660,13 +1660,14 @@ const G6C = { W: 460, H: 360, L: 40, R: 14, T: 12, B: 30 };
 function fgraph(svg, sp) {
   if (!svg) return;
   svg.replaceChildren();
-  const { W, H, L, R, T, B } = G6C, pw = W - L - R, ph = H - T - B;
-  const { xmin, xmax, ymin, ymax } = sp, stx = sp.sx || 1, sty = sp.sy || 1;
+  const { L, R, T, B } = G6C, { xmin, xmax, ymin, ymax } = sp, stx = sp.sx || 1, sty = sp.sy || 1;
+  const u = sp.u || 40, pw = u * (xmax - xmin), ph = u * (ymax - ymin), W = L + pw + R, H = T + ph + B; // jafnar einingar á báðum ásum
+  svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
   const X = x => L + (x - xmin) / (xmax - xmin) * pw, Y = y => T + (ymax - y) / (ymax - ymin) * ph;
   svg._X = X; svg._Y = Y; svg._sp = sp;
   svg.append(node('rect', { class: 'g6bg', x: L, y: T, width: pw, height: ph }));
-  for (let x = Math.ceil(xmin / stx) * stx; x <= xmax + 1e-9; x += stx) { svg.append(node('line', { class: 'g6g', x1: X(x), y1: T, x2: X(x), y2: H - B, stroke: '#e6edf2' })); }
-  for (let y = Math.ceil(ymin / sty) * sty; y <= ymax + 1e-9; y += sty) { svg.append(node('line', { class: 'g6g', x1: L, y1: Y(y), x2: W - R, y2: Y(y), stroke: '#e6edf2' })); }
+  for (let x = Math.ceil(xmin / stx) * stx; x <= xmax + 1e-9; x += stx) { svg.append(node('line', { class: 'g6g', x1: X(x), y1: T, x2: X(x), y2: H - B, stroke: '#d6e0e9' })); }
+  for (let y = Math.ceil(ymin / sty) * sty; y <= ymax + 1e-9; y += sty) { svg.append(node('line', { class: 'g6g', x1: L, y1: Y(y), x2: W - R, y2: Y(y), stroke: '#d6e0e9' })); }
   if (xmin <= 0 && xmax >= 0) svg.append(node('line', { class: 'g6a', x1: X(0), y1: T, x2: X(0), y2: H - B, stroke: '#879bab', 'stroke-width': 1.6 }));
   if (ymin <= 0 && ymax >= 0) svg.append(node('line', { class: 'g6a', x1: L, y1: Y(0), x2: W - R, y2: Y(0), stroke: '#879bab', 'stroke-width': 1.6 }));
   if (!sp.noLabels) { // tölur við ásana sjálfa, ekki á jaðri
@@ -1680,7 +1681,7 @@ function fgraph(svg, sp) {
   svg.append(node('text', { x: X(Math.max(xmin, Math.min(0, xmax))) + 6, y: T + 12, 'font-style': 'italic' }, sp.yl || 'y'));
   const cid = 'c6' + svg.id, defs = node('defs'), cp = node('clipPath', { id: cid });
   cp.append(node('rect', { x: L, y: T, width: pw, height: ph })); defs.append(cp); svg.append(defs);
-  const g = node('g', { 'clip-path': `url(#${cid})` }); svg.append(g);
+  const BO = sp.kblank ? 'b-only' : ''; const g = node('g', { 'clip-path': `url(#${cid})`, class: BO }); svg.append(g);
   const path = (fn, a, b, col, w, dash) => {
     let d = '', pen = false; const n = 300;
     for (let i = 0; i <= n; i++) { const x = a + (b - a) * i / n, y = fn(x); if (!Number.isFinite(y)) { pen = false; continue; } d += (pen ? 'L' : 'M') + X(x).toFixed(1) + ' ' + Y(Math.max(Math.min(y, ymax + 40), ymin - 40)).toFixed(1) + ' '; pen = true; }
@@ -1691,8 +1692,8 @@ function fgraph(svg, sp) {
     let d = '', pen = false; for (let i = 0; i <= 300; i++) { const y = ymin + (ymax - ymin) * i / 300, x = r.hx(y); if (!Number.isFinite(x)) { pen = false; continue; } d += (pen ? 'L' : 'M') + X(x).toFixed(1) + ' ' + Y(y).toFixed(1) + ' '; pen = true; }
     g.append(node('path', { d, fill: 'none', stroke: r.color || PARA, 'stroke-width': 3 }));
   });
-  (sp.pieces || []).forEach(p => { for (const [v, e] of [[p.a, p.ea], [p.b, p.eb]]) if (e) svg.append(node('circle', { cx: X(v), cy: Y(p.fn(v)), r: 6, fill: e === 'f' ? (p.color || PARA) : 'white', stroke: p.color || PARA, 'stroke-width': 2.5 })); });
-  (sp.labels || []).forEach(t => svg.append(node('text', { x: X(t.x), y: Y(t.y), 'text-anchor': t.anchor || 'middle', fill: t.color || '#496b83', 'font-size': t.size || 17, 'font-weight': 700 }, t.text)));
+  (sp.pieces || []).forEach(p => { for (const [v, e] of [[p.a, p.ea], [p.b, p.eb]]) if (e) svg.append(node('circle', { class: BO, cx: X(v), cy: Y(p.fn(v)), r: 6, fill: e === 'f' ? (p.color || PARA) : 'white', stroke: p.color || PARA, 'stroke-width': 2.5 })); });
+  (sp.labels || []).forEach(t => svg.append(node('text', { class: BO, x: X(t.x), y: Y(t.y), 'text-anchor': t.anchor || 'middle', fill: t.color || '#496b83', 'font-size': t.size || 17, 'font-weight': 700 }, t.text)));
   (sp.marks || []).forEach(mk => g6mark(svg, mk));
 }
 function g6lab(t, lab) { // D_f / V_f með lágskrift
@@ -1700,7 +1701,7 @@ function g6lab(t, lab) { // D_f / V_f með lágskrift
   t.append(document.createTextNode(mm[1])); const sub = node('tspan', { 'baseline-shift': 'sub', 'font-size': '72%' }, 'f'); t.append(sub);
   if (mm[2]) t.append(node('tspan', { 'baseline-shift': 'baseline' }, mm[2]));
 }
-function g6group(svg, mk) { const gg = node('g', { class: 'g6m' }); if (mk.ko) { gg.setAttribute('data-ks', ''); gg.setAttribute('data-ko', mk.ko); } svg.append(gg); return gg; }
+function g6group(svg, mk) { const gg = node('g', { class: 'g6m' + (svg._sp && svg._sp.kblank ? ' b-only' : '') }); if (mk.ko) { gg.setAttribute('data-ks', ''); gg.setAttribute('data-ko', mk.ko); } svg.append(gg); return gg; }
 function g6mark(svg, mk) {
   const X = svg._X, Y = svg._Y, sp = svg._sp, gg = g6group(svg, mk), RD = '#c4561f', DK = '#8a3b12';
   const dash = (x1, y1, x2, y2, c) => gg.append(node('line', { x1, y1, x2, y2, stroke: c || RD, 'stroke-width': 2.5, 'stroke-dasharray': '7 5' }));
@@ -1742,7 +1743,7 @@ const G6 = {
   hS1G: { ...vH, pieces: [{ fn: fH }], marks: [{ t: 'dot', x: -1, y: 0, lab: '−1', dx: -10, dy: -10, anc: 'end', ko: 1 }, { t: 'dot', x: 3, y: 0, lab: '3', dx: 10, dy: -10, ko: 1 }, { t: 'dot', x: 0, y: -3, lab: '(0, −3)', dx: -10, dy: 4, anc: 'end', ko: 2 }] },
   rgH3: { ...vH, pieces: [{ fn: fH }] }, hS3G: { ...vH, pieces: [{ fn: fH }], marks: [{ t: 'hline', y: 5, lab: 'y = 5', xs: [-2, 4], ko: 6 }] },
   hS2G: { ...vH, pieces: [{ fn: fH }], marks: [{ t: 'hline', y: -3, lab: 'y = −3', xs: [0, 2], ko: 1 }, { t: 'hline', y: -4, lab: 'y = −4', color: '#2f7d5c', xs: [1], ko: 3 }] },
-  rgF1: { ...vA }, fS1G: { ...vA, pieces: [{ fn: Math.abs }], marks: [{ t: 'dot', x: -3, y: 3, ko: 2 }, { t: 'dot', x: -2, y: 2, ko: 2 }, { t: 'dot', x: -1, y: 1, ko: 2 }, { t: 'dot', x: 0, y: 0, ko: 2 }, { t: 'dot', x: 1, y: 1, ko: 2 }, { t: 'dot', x: 2, y: 2, ko: 2 }, { t: 'dot', x: 3, y: 3, ko: 2 }] },
+  rgF1: { ...vA }, fS1G: { ...vA, kblank: true, pieces: [{ fn: Math.abs }], marks: [{ t: 'dot', x: -3, y: 3, ko: 2 }, { t: 'dot', x: -2, y: 2, ko: 2 }, { t: 'dot', x: -1, y: 1, ko: 2 }, { t: 'dot', x: 0, y: 0, ko: 2 }, { t: 'dot', x: 1, y: 1, ko: 2 }, { t: 'dot', x: 2, y: 2, ko: 2 }, { t: 'dot', x: 3, y: 3, ko: 2 }] },
   rgF2: { ...vA, ymin: -2, pieces: [{ fn: Math.abs }] },
   fS2G: { ...vA, ymin: -2, pieces: [{ fn: Math.abs }], marks: [{ t: 'hline', y: 3, lab: 'y = 3', xs: [-3, 3], ko: 1 }, { t: 'hline', y: 0, lab: 'y = 0', color: '#2f7d5c', xs: [0], ko: 3 }, { t: 'hline', y: -1, lab: 'y = −1', color: '#8a3b12', ko: 5 }] },
   // æfingadæmi
@@ -1850,8 +1851,73 @@ function setupG6() {
 }
 
 /* ---------- Penni í kynningarham ---------- */
-const PEN_T = { venj: { w: 4.5 }, skraut: { w: 11 }, ahersla: { w: 24, a: .32 }, lina: { w: 4 }, plina: { w: 4 } }, PEN_W = [0.5, 1, 1.9];
+const PEN_T = { venj: { w: 4.5 }, skraut: { w: 6.5 }, ahersla: { w: 24, a: .32 }, lina: { w: 4 }, plina: { w: 4 } }, PEN_W = [0.5, 1, 1.9];
 const PEN = { on: false, mode: 'pen', type: 'venj', wi: 1, color: '#c62828', strokes: {}, cur: null, cv: null, ctx: null };
+
+function skrautOutline(P, base) { // lindarpenni: mjókkar við hraða, þykknar við þrýsting, oddur á 45°
+  const n = P.length; if (n < 2) return null;
+  const W = []; let prev = null;
+  for (let i = 0; i < n; i++) {
+    const a = P[Math.max(0, i - 1)], b = P[Math.min(n - 1, i + 1)], v = Math.hypot(b[0] - a[0], b[1] - a[1]) / 2;
+    const ang = Math.atan2(b[1] - a[1], b[0] - a[0]);
+    let w = base * (0.45 + 0.9 * P[i][2]) * Math.max(0.42, Math.min(1.35, 1.45 - v / 18)) * (0.55 + 0.45 * Math.abs(Math.sin(ang + Math.PI / 4)));
+    w = prev == null ? w : prev * 0.7 + w * 0.3; prev = w;
+    const tIn = Math.min(1, (i + 1) / 6), tOut = Math.min(1, (n - i) / 7);
+    W.push(w * (0.25 + 0.75 * Math.min(tIn, tOut)));
+  }
+  const L = [], R = [];
+  for (let i = 0; i < n; i++) {
+    const a = P[Math.max(0, i - 1)], b = P[Math.min(n - 1, i + 1)];
+    let dx = b[0] - a[0], dy = b[1] - a[1]; const d = Math.hypot(dx, dy) || 1; dx /= d; dy /= d;
+    const h = W[i] / 2; L.push([P[i][0] - dy * h, P[i][1] + dx * h]); R.push([P[i][0] + dy * h, P[i][1] - dx * h]);
+  }
+  return L.concat(R.reverse());
+}
+function smoothPath(pts) { // lokuð slóð með ferningsferlum gegnum miðpunkta
+  let d = `M${pts[0][0].toFixed(1)} ${pts[0][1].toFixed(1)}`;
+  for (let i = 1; i < pts.length - 1; i++) { const mx = (pts[i][0] + pts[i + 1][0]) / 2, my = (pts[i][1] + pts[i + 1][1]) / 2; d += `Q${pts[i][0].toFixed(1)} ${pts[i][1].toFixed(1)} ${mx.toFixed(1)} ${my.toFixed(1)}`; }
+  return d + 'Z';
+}
+
+function strokeBox(st) { let a = 1e9, b = 1e9, c = -1e9, d = -1e9; for (const [x, y] of st.p) { a = Math.min(a, x); b = Math.min(b, y); c = Math.max(c, x); d = Math.max(d, y); } const h = st.w / 2 + 2; return [a - h, b - h, c + h, d + h]; }
+function selBox(sel) { let a = 1e9, b = 1e9, c = -1e9, d = -1e9; for (const st of sel.items) { const [p, q, r, t] = strokeBox(st); a = Math.min(a, p); b = Math.min(b, q); c = Math.max(c, r); d = Math.max(d, t); } return [a - 8, b - 8, c + 8, d + 8]; }
+function penDrawSel(c) {
+  const S = PEN.sel; if (!S) return;
+  c.save(); c.setLineDash([7, 5]); c.lineWidth = 1.6; c.strokeStyle = '#1565c0';
+  if (S.rect) { const [a, b, x, y] = S.rect; c.fillStyle = 'rgba(21,101,192,.06)'; c.fillRect(Math.min(a, x) - scrollX, Math.min(b, y) - scrollY, Math.abs(x - a), Math.abs(y - b)); c.strokeRect(Math.min(a, x) - scrollX, Math.min(b, y) - scrollY, Math.abs(x - a), Math.abs(y - b)); }
+  if (S.items && S.items.length) {
+    const [a, b, x, y] = selBox(S); c.strokeRect(a - scrollX, b - scrollY, x - a, y - b); c.setLineDash([]);
+    for (const [hx, hy] of [[a, b], [x, b], [a, y], [x, y]]) { c.fillStyle = '#fff'; c.beginPath(); c.arc(hx - scrollX, hy - scrollY, 8, 0, 7); c.fill(); c.stroke(); }
+  }
+  c.restore();
+}
+function selDown(x, y) {
+  const S = PEN.sel;
+  if (S && S.items && S.items.length) {
+    const [a, b, X2, Y2] = selBox(S);
+    const hs = [[a, b, X2, Y2], [X2, b, a, Y2], [a, Y2, X2, b], [X2, Y2, a, b]]; // [handle, anchor]
+    for (const [hx, hy, ax, ay] of hs) if (Math.hypot(x - hx, y - hy) < 18) { S.drag = { mode: 'scale', ax, ay, d0: Math.hypot(hx - ax, hy - ay), orig: S.items.map(st => ({ p: st.p.map(q => q.slice()), w: st.w })) }; return; }
+    if (x > a && x < X2 && y > b && y < Y2) { S.drag = { mode: 'move', x0: x, y0: y, orig: S.items.map(st => ({ p: st.p.map(q => q.slice()), w: st.w })) }; return; }
+  }
+  PEN.sel = { rect: [x, y, x, y], items: [] };
+}
+function selMove(x, y) {
+  const S = PEN.sel; if (!S) return;
+  if (S.rect) { S.rect[2] = x; S.rect[3] = y; }
+  else if (S.drag && S.drag.mode === 'move') { const dx = x - S.drag.x0, dy = y - S.drag.y0; S.items.forEach((st, i) => { st.p = S.drag.orig[i].p.map(([px, py, pp]) => [px + dx, py + dy, pp]); }); }
+  else if (S.drag && S.drag.mode === 'scale') { const { ax, ay, d0 } = S.drag, f = Math.max(0.15, Math.hypot(x - ax, y - ay) / (d0 || 1)); S.items.forEach((st, i) => { st.p = S.drag.orig[i].p.map(([px, py, pp]) => [ax + (px - ax) * f, ay + (py - ay) * f, pp]); st.w = S.drag.orig[i].w * f; }); }
+  penDraw();
+}
+function selUp() {
+  const S = PEN.sel; if (!S) return;
+  if (S.rect) {
+    const [a, b, x, y] = S.rect, x0 = Math.min(a, x), x1 = Math.max(a, x), y0 = Math.min(b, y), y1 = Math.max(b, y);
+    const list = PEN.strokes[penKey()] || [];
+    const items = (x1 - x0 < 4 && y1 - y0 < 4) ? [] : list.filter(st => st.p.some(([px, py]) => px >= x0 && px <= x1 && py >= y0 && py <= y1) || ((st.t === 'lina' || st.t === 'plina') && (() => { const [l, t, r, bt] = strokeBox(st); return l < x1 && r > x0 && t < y1 && bt > y0; })()));
+    PEN.sel = items.length ? { items } : null;
+  } else if (S.drag) S.drag = null;
+  penDraw();
+}
 function penKey() { return K.sec ? K.sec.id + ':' + K.i : 'x'; }
 function penResize() {
   const cv = PEN.cv, dpr = window.devicePixelRatio || 1;
@@ -1872,24 +1938,16 @@ function penDraw() {
       c.globalAlpha = PEN_T.ahersla.a; c.lineWidth = s.w; c.lineCap = 'butt'; c.beginPath(); c.moveTo(P[0][0], P[0][1]);
       for (let i = 1; i < P.length; i++) c.lineTo(P[i][0], P[i][1]); c.stroke(); c.globalAlpha = 1; c.lineCap = 'round'; continue;
     }
-    if (t === 'skraut') { // skrautskrift: skáskorinn oddur (45°)
-      const nx = Math.cos(-Math.PI / 4) * s.w / 2, ny = Math.sin(-Math.PI / 4) * s.w / 2;
-      for (let i = 1; i < P.length; i++) {
-        const [x0, y0, p0] = P[i - 1], [x1, y1, p1] = P[i], k0 = .55 + p0, k1 = .55 + p1;
-        c.beginPath(); c.moveTo(x0 - nx * k0, y0 - ny * k0); c.lineTo(x0 + nx * k0, y0 + ny * k0); c.lineTo(x1 + nx * k1, y1 + ny * k1); c.lineTo(x1 - nx * k1, y1 - ny * k1); c.closePath(); c.fill();
-        c.lineWidth = 1; c.stroke();
-      }
-      continue;
-    }
+    if (t === 'skraut') { const o = skrautOutline(P, s.w); if (o) c.fill(new Path2D(smoothPath(o))); continue; }
     for (let i = 1; i < P.length; i++) {
       const [x0, y0, p0] = P[i - 1], [x1, y1, p1] = P[i];
       c.lineWidth = s.w * (0.55 + (p0 + p1) / 2); c.beginPath(); c.moveTo(x0, y0); c.lineTo(x1, y1); c.stroke();
     }
   }
+  penDrawSel(c);
 }
 function penSet(on) {
   PEN.on = on; document.documentElement.classList.toggle('pen-on', on);
-  const b = $('kPen'); if (b) { b.setAttribute('aria-pressed', String(on)); }
 }
 function penErase(x, y) {
   const k = penKey(), list = PEN.strokes[k] || [];
@@ -1901,21 +1959,36 @@ function setupPen() {
   const cv = document.createElement('canvas'); cv.id = 'penCanvas'; cv.setAttribute('aria-hidden', 'true'); document.body.append(cv);
   PEN.cv = cv; PEN.ctx = cv.getContext('2d');
   const wrap = document.createElement('span'); wrap.className = 'pen-tools';
-  wrap.innerHTML = '<button type="button" id="kPen" aria-pressed="false" title="Teikna (P)">✎</button>'
-    + '<span class="pen-t" role="group" aria-label="Gerð penna">' + [['venj', 'Penni'], ['skraut', 'Skraut'], ['ahersla', 'Áhersla'], ['lina', 'Lína'], ['plina', 'Punktalína']].map(([k, l]) => `<button type="button" data-t="${k}" aria-pressed="false">${l}</button>`).join('') + '</span>'
-    + '<span class="pen-w" role="group" aria-label="Þykkt">' + ['Mjór', 'Miðlungs', 'Þykkur'].map((l, i) => `<button type="button" data-w="${i}" aria-pressed="false" aria-label="${l}" title="${l}"><i style="--d:${[4, 8, 13][i]}px"></i></button>`).join('') + '</span>'
-    + ['#c62828', '#1a1a1a', '#1565c0'].map((c, i) => `<button type="button" class="pen-c" data-c="${c}" aria-label="Litur ${i + 1}" title="Litur (${i + 1})" style="--pc:${c}"></button>`).join('')
-    + '<button type="button" id="kPdf" title="Prenta glærur dagsins með teikningum (vista sem PDF)">PDF</button><button type="button" id="kErase" aria-pressed="false" title="Strokleður (E)">Strokleður</button><button type="button" id="kUndo" title="Afturkalla (Ctrl+Z)">↶</button><button type="button" id="kClearInk" title="Hreinsa (C)">Hreinsa</button>';
+  wrap.innerHTML = '<span class="pen-g" role="group" aria-label="Verkfæri">' + '<button type="button" class="pt" data-tool="hand" aria-pressed="false" title="Benda / fletta (P)" aria-label="Benda / fletta (P)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3l12 7-5 1.5L16 18l-2 1-3-6.5L7 16z"/></svg></button><button type="button" class="pt" data-tool="venj" aria-pressed="false" title="Penni" aria-label="Penni"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1-4L16 5l3 3L8 19z"/><path d="M14 7l3 3"/></svg></button><button type="button" class="pt" data-tool="skraut" aria-pressed="false" title="Skrautskrift" aria-label="Skrautskrift"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c3 3 5 6 5 9l-5 9-5-9c0-3 2-6 5-9z"/><path d="M12 12v9"/><circle cx="12" cy="11" r="1.4"/></svg></button><button type="button" class="pt" data-tool="ahersla" aria-pressed="false" title="Áherslupenni" aria-label="Áherslupenni"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 21h6"/><path d="M8 17l-2 2 1 1h3l1-1"/><path d="M9 16l8-11 3 2-6 11z"/><path d="M9 16l3 2"/></svg></button><button type="button" class="pt" data-tool="lina" aria-pressed="false" title="Bein lína" aria-label="Bein lína"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19L19 5"/></svg></button><button type="button" class="pt" data-tool="plina" aria-pressed="false" title="Punktalína" aria-label="Punktalína"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19l2.5-2.5M10 14l2.5-2.5M15 9l2.5-2.5" /></svg></button><button type="button" class="pt" data-tool="sel" aria-pressed="false" title="Velja svæði: færa, minnka eða stækka (S)" aria-label="Velja svæði"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" stroke-dasharray="3 2.5"/><path d="M14 14l6 6M20 15v5h-5"/></svg></button><button type="button" class="pt" data-tool="erase" aria-pressed="false" title="Strokleður (E)" aria-label="Strokleður (E)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 20h12"/><path d="M4 15l9-9 6 6-7 7H8z"/><path d="M9 10l6 6"/></svg></button>' + '</span>'
+    + '<span class="pen-g pen-w" role="group" aria-label="Þykkt">' + ['Mjór', 'Miðlungs', 'Þykkur'].map((l, i) => `<button type="button" data-w="${i}" aria-pressed="false" aria-label="${l}" title="${l}"><i style="--d:${[4, 8, 13][i]}px"></i></button>`).join('') + '</span>'
+    + '<span class="pen-g" role="group" aria-label="Litur">' + ['#c62828', '#1a1a1a', '#1565c0'].map((c, i) => `<button type="button" class="pen-c" data-c="${c}" aria-pressed="false" aria-label="Litur ${i + 1}" title="Litur (${i + 1})" style="--pc:${c}"></button>`).join('') + '</span>'
+    + '<span class="pen-g">'
+    + '<button type="button" id="kUndo" class="pa" title="Afturkalla (Ctrl+Z)" aria-label="Afturkalla"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 7H4V2"/><path d="M4 7a8 8 0 1 1 2 9"/></svg></button>'
+    + '<button type="button" id="kClearInk" class="pa" title="Hreinsa glæruna (C)" aria-label="Hreinsa glæruna"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16"/><path d="M9 7V4h6v3"/><path d="M6 7l1 13h10l1-13"/></svg></button>'
+    + '<button type="button" id="kGrid" class="pa" aria-pressed="false" title="Rúðustrikun á þessari glæru (R)" aria-label="Rúðustrikun"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16"/><path d="M4 9.3h16M4 14.6h16M9.3 4v16M14.6 4v16"/></svg></button>'
+    + '<button type="button" id="kPdf" class="pa" title="Prenta glærur dagsins með teikningum (vista sem PDF)" aria-label="Prenta sem PDF"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 8V3h10v5"/><rect x="4" y="8" width="16" height="8" rx="1"/><path d="M7 14h10v7H7z"/></svg></button>'
+    + '</span>';
   bar.insertBefore(wrap, $('kNotes'));
-  const pickT = t => { PEN.type = t; PEN.mode = 'pen'; $('kErase').setAttribute('aria-pressed', 'false'); document.querySelectorAll('.pen-t button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.t === t))); penSet(true); };
-  document.querySelectorAll('.pen-t button').forEach(b => b.addEventListener('click', () => pickT(b.dataset.t)));
+  const tool = t => {
+    if (t !== 'hand' && t !== 'erase' && t !== 'sel') { PEN.type = t; PEN.last = t; }
+    if (t !== 'sel' && PEN.sel) { PEN.sel = null; penDraw(); }
+    PEN.tool = t; PEN.mode = t === 'erase' ? 'erase' : t === 'sel' ? 'sel' : 'pen';
+    if (PEN.cv) PEN.cv.style.cursor = t === 'sel' ? 'default' : '';
+    document.querySelectorAll('.pen-tools .pt').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.tool === t)));
+    penSet(t !== 'hand');
+  };
+  PEN.setTool = tool;
+  document.querySelectorAll('.pen-tools .pt').forEach(b => b.addEventListener('click', () => tool(b.dataset.tool)));
   const pickW = i => { PEN.wi = i; document.querySelectorAll('.pen-w button').forEach(b => b.setAttribute('aria-pressed', String(+b.dataset.w === i))); };
-  document.querySelectorAll('.pen-w button').forEach(b => b.addEventListener('click', () => { pickW(+b.dataset.w); if (PEN.mode === 'erase') pickT(PEN.type); else penSet(true); }));
-  const pick = c => { PEN.color = c; PEN.mode = 'pen'; $('kErase').setAttribute('aria-pressed', 'false'); document.querySelectorAll('.pen-c').forEach(b => b.classList.toggle('sel', b.dataset.c === c)); penSet(true); };
+  document.querySelectorAll('.pen-w button').forEach(b => b.addEventListener('click', () => { pickW(+b.dataset.w); if (PEN.tool === 'hand' || PEN.tool === 'erase' || PEN.tool === 'sel') tool(PEN.last || 'venj'); }));
+  const pick = c => { PEN.color = c; document.querySelectorAll('.pen-c').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.c === c))); if (PEN.tool === 'hand' || PEN.tool === 'erase' || PEN.tool === 'sel') tool(PEN.last || 'venj'); };
   document.querySelectorAll('.pen-c').forEach(b => b.addEventListener('click', () => pick(b.dataset.c)));
-  pick(PEN.color); pickT(PEN.type); pickW(1); penSet(false);
-  $('kPen').addEventListener('click', () => penSet(!PEN.on));
-  $('kErase').addEventListener('click', () => { PEN.mode = PEN.mode === 'erase' ? 'pen' : 'erase'; $('kErase').setAttribute('aria-pressed', String(PEN.mode === 'erase')); penSet(true); });
+  PEN.last = 'venj'; tool('hand'); pickW(1); PEN.color = '#c62828'; document.querySelectorAll('.pen-c').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.c === PEN.color)));
+  $('kGrid').addEventListener('click', () => kGridToggle());
+  if (typeof kApply === 'function' && !kApply._g) { const oA = kApply; kApply = function () { const r = oA.apply(this, arguments); kGridApply(); setTimeout(kGridApply, 680); return r; }; kApply._g = 1; }
+  if (typeof kClear === 'function' && !kClear._g) { const oC = kClear; kClear = function (sl) { PEN.sel = null; if (sl) { sl.style.minHeight = ''; sl.classList.remove('k-grid'); ['--gx', '--gy', '--gpx', '--gpy'].forEach(v => sl.style.removeProperty(v)); } return oC.apply(this, arguments); }; kClear._g = 1; }
+  if (typeof kBuildSteps === 'function' && !kBuildSteps._g) { const oB = kBuildSteps; kBuildSteps = function (pn) { const all = [...pn.querySelectorAll('[data-ks]')]; if (all.length && all.every(e => e.closest('.b-only'))) return []; return oB.apply(this, arguments); }; kBuildSteps._g = 1; }
+  if (typeof kFit === 'function' && !kFit._g) { const oF = kFit; kFit = function () { const s0 = K.slides && K.slides[K.i]; if (s0) s0.style.minHeight = ''; const r = oF.apply(this, arguments); setTimeout(kGridApply, 60); return r; }; kFit._g = 1; }
   const undo = () => { const l = PEN.strokes[penKey()]; if (l && l.length) { l.pop(); penDraw(); } };
   const clear = () => { PEN.strokes[penKey()] = []; penDraw(); };
   $('kPdf').addEventListener('click', kPrintSlides);
@@ -1924,18 +1997,20 @@ function setupPen() {
     if (!PEN.on) return; e.preventDefault(); cv.setPointerCapture(e.pointerId);
     const x = e.clientX + scrollX, y = e.clientY + scrollY, er = PEN.mode === 'erase' || (e.buttons & 32) || e.button === 5;
     if (er) { PEN.cur = { erase: true }; penErase(x, y); return; }
+    if (PEN.tool === 'sel') { PEN.cur = { sel: true }; selDown(x, y); penDraw(); return; }
     const p = e.pointerType === 'mouse' || !e.pressure ? 0.5 : e.pressure;
     PEN.cur = { c: PEN.color, t: PEN.type, w: PEN_T[PEN.type].w * PEN_W[PEN.wi], p: [[x, y, p]] }; (PEN.strokes[penKey()] ||= []).push(PEN.cur); penDraw();
   });
   cv.addEventListener('pointermove', e => {
     if (!PEN.cur) return; const x = e.clientX + scrollX, y = e.clientY + scrollY;
     if (PEN.cur.erase) { penErase(x, y); return; }
+    if (PEN.cur.sel) { selMove(x, y); return; }
     const evs = e.getCoalescedEvents ? e.getCoalescedEvents() : [e];
     if (PEN.cur.t === 'lina' || PEN.cur.t === 'plina') { PEN.cur.p[1] = [x, y, .5]; penDraw(); return; }
     for (const ev of evs) PEN.cur.p.push([ev.clientX + scrollX, ev.clientY + scrollY, ev.pointerType === 'mouse' || !ev.pressure ? 0.5 : ev.pressure]);
     penDraw();
   });
-  const end = () => { PEN.cur = null; };
+  const end = () => { if (PEN.cur && PEN.cur.sel) selUp(); PEN.cur = null; };
   cv.addEventListener('pointerup', end); cv.addEventListener('pointercancel', end);
   addEventListener('scroll', () => { if (K.on) penDraw(); }, { passive: true });
   addEventListener('resize', penResize); penResize();
@@ -1944,8 +2019,11 @@ function setupPen() {
     const t = e.target; if (t && t.matches && t.matches('input, textarea, select')) return;
     if ((e.ctrlKey || e.metaKey) && (e.key === 'z' || e.key === 'Z')) { e.preventDefault(); undo(); return; }
     if (e.ctrlKey || e.metaKey || e.altKey) return;
-    if (e.key === 'p' || e.key === 'P') { e.preventDefault(); penSet(!PEN.on); }
-    else if (e.key === 'e' || e.key === 'E') { e.preventDefault(); $('kErase').click(); }
+    if (e.key === 'p' || e.key === 'P') { e.preventDefault(); PEN.setTool(PEN.tool === 'hand' ? (PEN.last || 'venj') : 'hand'); }
+    else if (e.key === 'e' || e.key === 'E') { e.preventDefault(); PEN.setTool(PEN.tool === 'erase' ? (PEN.last || 'venj') : 'erase'); }
+    else if (e.key === 'r' || e.key === 'R') { e.preventDefault(); kGridToggle(); }
+    else if (e.key === 's' || e.key === 'S') { e.preventDefault(); PEN.setTool(PEN.tool === 'sel' ? (PEN.last || 'venj') : 'sel'); }
+    else if ((e.key === 'Delete' || e.key === 'Backspace') && PEN.sel && PEN.sel.items) { e.preventDefault(); const k = penKey(); PEN.strokes[k] = (PEN.strokes[k] || []).filter(st => !PEN.sel.items.includes(st)); PEN.sel = null; penDraw(); }
     else if (e.key === 'c' || e.key === 'C') { e.preventDefault(); clear(); }
     else if (['1', '2', '3'].includes(e.key)) { e.preventDefault(); pick(['#c62828', '#1a1a1a', '#1565c0'][+e.key - 1]); }
   });
@@ -1961,12 +2039,7 @@ function penSVG(list, ox, oy, w, h) {
     if (t === 'lina' || t === 'plina') { const a = P[0], b = P[P.length - 1]; add('line', { x1: a[0], y1: a[1], x2: b[0], y2: b[1], stroke: s.c, 'stroke-width': s.w, 'stroke-linecap': t === 'plina' ? 'butt' : 'round', 'stroke-dasharray': t === 'plina' ? `${s.w * 3.2} ${s.w * 2.4}` : '' }); continue; }
     if (P.length === 1) { add('circle', { cx: P[0][0], cy: P[0][1], r: t === 'skraut' ? 3 : s.w / 2, fill: s.c }); continue; }
     if (t === 'ahersla') { add('polyline', { points: P.map(q => q[0] + ',' + q[1]).join(' '), fill: 'none', stroke: s.c, 'stroke-width': s.w, 'stroke-opacity': PEN_T.ahersla.a, 'stroke-linejoin': 'round' }); continue; }
-    if (t === 'skraut') {
-      const nx = Math.cos(-Math.PI / 4) * s.w / 2, ny = Math.sin(-Math.PI / 4) * s.w / 2;
-      for (let i = 1; i < P.length; i++) { const [x0, y0, p0] = P[i - 1], [x1, y1, p1] = P[i], k0 = .55 + p0, k1 = .55 + p1;
-        add('polygon', { points: [[x0 - nx * k0, y0 - ny * k0], [x0 + nx * k0, y0 + ny * k0], [x1 + nx * k1, y1 + ny * k1], [x1 - nx * k1, y1 - ny * k1]].map(q => q.join(',')).join(' '), fill: s.c, stroke: s.c, 'stroke-width': 1 }); }
-      continue;
-    }
+    if (t === 'skraut') { const o = skrautOutline(P, s.w); if (o) add('path', { d: smoothPath(o), fill: s.c }); continue; }
     for (let i = 1; i < P.length; i++) { const [x0, y0, p0] = P[i - 1], [x1, y1, p1] = P[i];
       add('line', { x1: x0, y1: y0, x2: x1, y2: y1, stroke: s.c, 'stroke-width': s.w * (0.55 + (p0 + p1) / 2), 'stroke-linecap': 'round' }); }
   }
@@ -1986,7 +2059,7 @@ function kPrintSlides() {
     const list = PEN.strokes[K.sec.id + ':' + i] || [];
     
     const z = parseFloat(getComputedStyle(sl).zoom) || 1, top = r.top + scrollY;
-    let cb = Math.max(...[...sl.children].map(c => c.getBoundingClientRect().bottom)) + scrollY + 14 * z;
+    let cb = Math.max(...[...sl.querySelectorAll(':scope > *, :scope > .grid > *')].map(c => c.getBoundingClientRect().bottom)) + scrollY + 14 * z;
     for (const q of list) for (const [, y] of q.p) cb = Math.max(cb, y + 20);
     const need = cb - top, room = PH - top - 10, f = Math.min(1, room / need);
     if (f < 1) cl.style.setProperty('--kz', z * f);
@@ -2002,6 +2075,36 @@ function kPrintSlides() {
   const done = () => { wrap.remove(); st.remove(); document.documentElement.classList.remove('k-printing'); document.documentElement.dataset.theme = theme; removeEventListener('afterprint', done); penDraw(); };
   addEventListener('afterprint', done);
   setTimeout(() => window.print(), 80);
+}
+
+/* ---------- Rúðustrikun á sýnidæmaglærum, jöfnuð við hnitakerfið ---------- */
+const GRID_KEY = 'staer2af05-v6-rudur';
+function kGridState(sl) {
+  let m = {}; try { m = JSON.parse(localStorage.getItem(GRID_KEY) || '{}'); } catch (e) {}
+  const k = sl.id || (K.sec.id + ':' + K.slides.indexOf(sl));
+  return k in m ? m[k] : sl.hasAttribute('data-rud');
+}
+function kGridApply() {
+  if (!K.on) return; const sl = K.slides[K.i]; if (!sl) return;
+  if (sl.hasAttribute('data-rud')) { const zz = parseFloat(getComputedStyle(sl).zoom) || 1, top = sl.getBoundingClientRect().top + scrollY; sl.style.minHeight = ((innerHeight * 1.8 - top) / zz) + 'px'; }
+  const on = kGridState(sl);
+  sl.classList.toggle('k-grid', on); const b = $('kGrid'); if (b) { b.setAttribute('aria-pressed', String(on)); b.disabled = false; }
+  if (!on) { sl.style.removeProperty('--gx'); sl.style.removeProperty('--gy'); sl.style.removeProperty('--gpx'); sl.style.removeProperty('--gpy'); return; }
+  const svg = sl.querySelector('svg.plot'), z = parseFloat(getComputedStyle(sl).zoom) || 1, rs = sl.getBoundingClientRect();
+  if (svg && svg._X && svg.getBoundingClientRect().width > 0) {
+    const M = svg.getScreenCTM(), sp = svg._sp, sx = u => M.a * u + M.e, sy = v => M.d * v + M.f;
+    const ux = sx(svg._X(1)) - sx(svg._X(0)), uy = sy(svg._Y(0)) - sy(svg._Y(1));
+    const ox = sx(svg._X(0)) - rs.left, oy = sy(svg._Y(0)) - rs.top;
+    const nn = Math.max(1, Math.round(ux / 64)), fx = ux / nn, fy = uy / nn;
+    sl.style.setProperty('--gx', (fx / z) + 'px'); sl.style.setProperty('--gy', (fy / z) + 'px');
+    sl.style.setProperty('--gpx', (((ox % fx) + fx) % fx / z) + 'px'); sl.style.setProperty('--gpy', (((oy % fy) + fy) % fy / z) + 'px');
+  } else { sl.style.setProperty('--gx', '26px'); sl.style.setProperty('--gy', '26px'); sl.style.setProperty('--gpx', '0px'); sl.style.setProperty('--gpy', '0px'); }
+}
+function kGridToggle() {
+  const sl = K.slides && K.slides[K.i]; if (!sl) return;
+  let m = {}; try { m = JSON.parse(localStorage.getItem(GRID_KEY) || '{}'); } catch (e) {}
+  m[sl.id || (K.sec.id + ':' + K.i)] = !kGridState(sl); try { localStorage.setItem(GRID_KEY, JSON.stringify(m)); } catch (e) {}
+  kGridApply();
 }
 
 /* ---------- Ræsing ---------- */
