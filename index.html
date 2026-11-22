@@ -1133,7 +1133,7 @@ html.k-printing[data-theme=dark] .save-warn{background:#33281a;border-color:#d39
 'use strict';
 // Vistunarlykill viku 5. Má ekki breyta eftir birtingu; annars glatast vistuð hök nemenda.
 const KEY = 'staer2af05-v6-vefbok-v1';
-const REV = 'STAER2AF05-V06-VB-v0.48-20261122';
+const REV = 'STAER2AF05-V06-VB-v0.49-20261122';
 const $ = id => document.getElementById(id);
 // Svið úr v0.3 (done, quiz, poe, k) eru óbreytt. v0.4 bætir við tpoe, fpoe og tasks.
 let state = { done: {}, quiz: {}, poe: {}, k: 2, tpoe: {}, fpoe: null, tasks: {} };
@@ -2794,23 +2794,35 @@ function zRectShow(x0, y0, x1, y1) {
   addEventListener('resize', () => { if (ZM.on) zReset(false); });
   addEventListener('scroll', () => { if (ZM.on) zDim(); }, { passive: true });
   document.addEventListener('click', e => { if (e.target.closest && e.target.closest('#kZ11')) zReset(true); });
-  const T = e => [...e.touches].map(t => [t.clientX, t.clientY]);
+  let penDn = 0; // penni sendir líka snertiatburði í sumum vöfrum: meðan penni snertir skjáinn eru snertiatburðir hunsaðir
+  document.addEventListener('pointerdown', e => { if (e.pointerType === 'pen') { penDn = 1; sw = null; ZM.pan = null; } }, true);
+  ['pointerup', 'pointercancel'].forEach(t => document.addEventListener(t, e => { if (e.pointerType === 'pen') penDn = 0; }, true));
+  const fin = L => penDn ? [] : [...L].filter(t => t.touchType !== 'stylus');
+  const T = e => fin(e.touches).map(t => [t.clientX, t.clientY]);
+  let sw = null; // strok með fingri frá jaðri: fletta
+  const EDGE = 70;
   const isCtl = n => n && n.closest && n.closest('input, button, select, .seg, #kbar, .k-cd');
   document.addEventListener('touchstart', e => {
-    if (!K.on) return;
-    if (e.touches.length === 2) { const [p, q] = T(e); PEN.touch = null; ZM.pan = null; ZM.pk = null; zRectShow();
+    if (!K.on) return; const n = fin(e.touches).length; if (!n) return;
+    if (n === 1 && fin(e.changedTouches).length) { const [p] = T(e); sw = (p[0] > innerWidth - EDGE || p[0] < EDGE) && !isCtl(e.target) ? { x: p[0], y: p[1], dir: p[0] > innerWidth / 2 ? -1 : 1 } : null; } else sw = null;
+    if (n === 2) { const [p, q] = T(e); PEN.touch = null; ZM.pan = null; ZM.pk = null; zRectShow();
       ZM.pinch = { s0: ZM.s, a0: ZM.ax, b0: ZM.ay, d0: Math.hypot(q[0] - p[0], q[1] - p[1]) || 1, m0: [(p[0] + q[0]) / 2, (p[1] + q[1]) / 2] }; e.preventDefault(); return; }
-    if (e.touches.length === 1 && ZM.on && !isCtl(e.target) && PEN.tool !== 'zoom') { const [p] = T(e); ZM.pan = { x: p[0], y: p[1] }; }
+    if (n === 1 && !sw && ZM.on && !isCtl(e.target) && PEN.tool !== 'zoom') { const [p] = T(e); ZM.pan = { x: p[0], y: p[1] }; }
   }, { passive: false });
   document.addEventListener('touchmove', e => {
     if (!K.on) return;
-    if (ZM.pinch && e.touches.length >= 2) { e.preventDefault(); const [p, q] = T(e), P = ZM.pinch;
+    const n = fin(e.touches).length; if (!n) return;
+    if (sw) { const [p] = T(e); if (Math.abs(p[0] - sw.x) > 12) { e.preventDefault(); PEN.touch = null; } return; }
+    if (ZM.pinch && n >= 2) { e.preventDefault(); const [p, q] = T(e), P = ZM.pinch;
       const s = Math.max(1, Math.min(6, P.s0 * Math.hypot(q[0] - p[0], q[1] - p[1]) / P.d0)), m = [(p[0] + q[0]) / 2, (p[1] + q[1]) / 2];
       const pu = (P.m0[0] + scrollX - P.a0) / P.s0, pv = (P.m0[1] + scrollY - P.b0) / P.s0;
       cancelAnimationFrame(ZM.raf); ZM.on = true; ZM.s = s; ZM.ax = m[0] + scrollX - s * pu; ZM.ay = m[1] + scrollY - s * pv; zApply(); zClamp(); zApply(); return; }
-    if (ZM.pan && ZM.on && e.touches.length === 1) { e.preventDefault(); const [p] = T(e); ZM.ax += p[0] - ZM.pan.x; ZM.ay += p[1] - ZM.pan.y; ZM.pan = { x: p[0], y: p[1] }; zApply(); zClamp(); zApply(); }
+    if (ZM.pan && ZM.on && n === 1) { e.preventDefault(); const [p] = T(e); ZM.ax += p[0] - ZM.pan.x; ZM.ay += p[1] - ZM.pan.y; ZM.pan = { x: p[0], y: p[1] }; zApply(); zClamp(); zApply(); }
   }, { passive: false });
-  const tEnd = e => { if (ZM.pinch && e.touches.length < 2) { ZM.pinch = null; if (ZM.s <= 1.08) zReset(true); } if (!e.touches.length) ZM.pan = null; };
+  const tEnd = e => { const n = fin(e.touches).length;
+    if (sw && fin(e.changedTouches).length) { const t = fin(e.changedTouches)[0], dx = t.clientX - sw.x, dy = t.clientY - sw.y, d = sw.dir; sw = null;
+      if (dx * d > 80 && Math.abs(dy) < Math.abs(dx) * 0.6) { if (d < 0 && K.i < K.slides.length - 1) kShow(K.i + 1, false); else if (d > 0 && K.i > 0) kShow(K.i - 1, true); } }
+    if (ZM.pinch && n < 2) { ZM.pinch = null; if (ZM.s <= 1.08) zReset(true); } if (!n) ZM.pan = null; };
   document.addEventListener('touchend', tEnd); document.addEventListener('touchcancel', tEnd);
   addEventListener('wheel', e => { if (!K.on || !e.ctrlKey) return; e.preventDefault(); // Ctrl + skrunhjól (til prófunar á tölvu)
     const s = Math.max(1, Math.min(6, ZM.s * Math.exp(-e.deltaY / 300))), [a, b] = zP(e.clientX, e.clientY);
